@@ -6,11 +6,12 @@ senha = input('Digite sua senha: ')
 login_permitido = 'teste'
 senha_permitida = 'teste'
 
-while login == login_permitido and senha == senha_permitida:
-    print('Você está conectado!')
-    break
+while login != login_permitido and senha != senha_permitida:
+    print('Você digitou alguma coisa errada...')
+
 else:
-    print('Você digitou alguma coisa errada...') 
+    print('Você está conectado!')
+    
     
 while True:
     nome = input('Qual o seu nome? ')
